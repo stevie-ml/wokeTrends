@@ -30,10 +30,11 @@ GEO = 'US'
 OUTPUT_DIR = 'output'
 
 KEYWORDS = [
-    'DEI',
-    'HR',
     'unconscious bias',
+    'intersectionality',
     'structural racism',
+    'white privilege',
+    'gender identity',
 ]
 
 # Topic mid → display label

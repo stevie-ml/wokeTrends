@@ -1,32 +1,22 @@
 {
   "keyword_stats": {
-    "DEI": {
-      "pre_mean": 14.02,
-      "post_mean": 14.44,
-      "peak_post": 18,
-      "peak_post_date": "2025-05-01",
-      "diff": 0.43,
-      "ratio": 1.031,
-      "n_pre": 61,
-      "n_post": 9
-    },
-    "HR": {
-      "pre_mean": 71.56,
-      "post_mean": 81.89,
-      "peak_post": 100,
-      "peak_post_date": "2025-07-01",
-      "diff": 10.33,
-      "ratio": 1.144,
-      "n_pre": 61,
-      "n_post": 9
-    },
     "unconscious bias": {
       "pre_mean": 43.52,
-      "post_mean": 28.56,
+      "post_mean": 28.44,
       "peak_post": 33,
       "peak_post_date": "2025-09-01",
-      "diff": -14.97,
-      "ratio": 0.656,
+      "diff": -15.08,
+      "ratio": 0.654,
+      "n_pre": 61,
+      "n_post": 9
+    },
+    "intersectionality": {
+      "pre_mean": 56.07,
+      "post_mean": 43.33,
+      "peak_post": 63,
+      "peak_post_date": "2025-09-01",
+      "diff": -12.73,
+      "ratio": 0.773,
       "n_pre": 61,
       "n_post": 9
     },
@@ -39,16 +29,36 @@
       "ratio": 1.014,
       "n_pre": 61,
       "n_post": 9
+    },
+    "white privilege": {
+      "pre_mean": 8.36,
+      "post_mean": 4.11,
+      "peak_post": 5,
+      "peak_post_date": "2025-06-01",
+      "diff": -4.25,
+      "ratio": 0.492,
+      "n_pre": 61,
+      "n_post": 9
+    },
+    "gender identity": {
+      "pre_mean": 55.56,
+      "post_mean": 60.11,
+      "peak_post": 75,
+      "peak_post_date": "2025-11-01",
+      "diff": 4.55,
+      "ratio": 1.082,
+      "n_pre": 61,
+      "n_post": 9
     }
   },
   "topic_stats": {
     "Diversity, equity, and inclusion (Topic)": {
       "pre_mean": 8.1,
-      "post_mean": 7.44,
+      "post_mean": 7.33,
       "peak_post": 12,
       "peak_post_date": "2025-09-01",
-      "diff": -0.65,
-      "ratio": 0.919,
+      "diff": -0.77,
+      "ratio": 0.906,
       "n_pre": 61,
       "n_post": 9
     },
@@ -65,27 +75,31 @@
   },
   "ayers_lite": {
     "keywords": {
-      "DEI": {
-        "diff": 0.43,
-        "ratio": 1.031
-      },
-      "HR": {
-        "diff": 10.33,
-        "ratio": 1.144
-      },
       "unconscious bias": {
-        "diff": -14.97,
-        "ratio": 0.656
+        "diff": -15.08,
+        "ratio": 0.654
+      },
+      "intersectionality": {
+        "diff": -12.73,
+        "ratio": 0.773
       },
       "structural racism": {
         "diff": 0.47,
         "ratio": 1.014
+      },
+      "white privilege": {
+        "diff": -4.25,
+        "ratio": 0.492
+      },
+      "gender identity": {
+        "diff": 4.55,
+        "ratio": 1.082
       }
     },
     "topics": {
       "Diversity, equity, and inclusion (Topic)": {
-        "diff": -0.65,
-        "ratio": 0.919
+        "diff": -0.77,
+        "ratio": 0.906
       },
       "Diversity training (Topic)": {
         "diff": -19.01,
@@ -128,33 +142,23 @@
     }
   },
   "robustness_window": {
-    "DEI": {
-      "pre_mean": 29.12,
-      "post_mean": 6.25,
-      "peak_post": 9,
-      "peak_post_date": "2025-04-27",
-      "diff": -22.87,
-      "ratio": 0.215,
-      "n_pre": 17,
-      "n_post": 40
-    },
-    "HR": {
-      "pre_mean": 73.12,
-      "post_mean": 70.05,
-      "peak_post": 100,
-      "peak_post_date": "2025-07-13",
-      "diff": -3.07,
-      "ratio": 0.958,
-      "n_pre": 17,
-      "n_post": 40
-    },
     "unconscious bias": {
       "pre_mean": 79.94,
-      "post_mean": 67.9,
+      "post_mean": 67.92,
       "peak_post": 92,
       "peak_post_date": "2025-09-21",
-      "diff": -12.04,
-      "ratio": 0.849,
+      "diff": -12.02,
+      "ratio": 0.85,
+      "n_pre": 17,
+      "n_post": 40
+    },
+    "intersectionality": {
+      "pre_mean": 75.18,
+      "post_mean": 60.92,
+      "peak_post": 92,
+      "peak_post_date": "2025-09-14",
+      "diff": -14.25,
+      "ratio": 0.81,
       "n_pre": 17,
       "n_post": 40
     },
@@ -165,6 +169,26 @@
       "peak_post_date": "2025-11-30",
       "diff": 5.67,
       "ratio": 1.127,
+      "n_pre": 17,
+      "n_post": 40
+    },
+    "white privilege": {
+      "pre_mean": 51.71,
+      "post_mean": 45.68,
+      "peak_post": 100,
+      "peak_post_date": "2025-06-08",
+      "diff": -6.03,
+      "ratio": 0.883,
+      "n_pre": 17,
+      "n_post": 40
+    },
+    "gender identity": {
+      "pre_mean": 76.35,
+      "post_mean": 70.92,
+      "peak_post": 99,
+      "peak_post_date": "2025-11-02",
+      "diff": -5.43,
+      "ratio": 0.929,
       "n_pre": 17,
       "n_post": 40
     }

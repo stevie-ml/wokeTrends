@@ -13,9 +13,9 @@
 
 **(c) Geography:** United States (nationwide)
 
-**(d) Construct Y:** Institutional DEI salience — the degree to which the public (and especially institutional actors such as HR professionals, compliance officers, and organizational leaders) actively seek information about diversity, equity, and inclusion frameworks and practices.
+**(d) Construct Y:** Institutional DEI salience — the degree to which the public (and especially institutional actors such as HR professionals, compliance officers, and organizational leaders) actively seek information about diversity, equity, and inclusion frameworks, concepts, and practices.
 
-**(e) Mechanism:** Richard Hanania's "Origin of Woke" model argues that "wokeness" is primarily an institutional equilibrium maintained by HR, legal, and bureaucratic incentives rather than mass public opinion. If this model is correct, executive orders that remove or reverse federal DEI mandates should produce a sharp, sustained decline in DEI-related search activity — not merely a transient news spike — because institutional actors respond quickly to changed compliance incentives. In contrast, a "mass belief" model would predict either no change (beliefs are sticky) or a backlash increase. The five-year window lets us see the full rise (2020 George Floyd / BLM) and potential fall (2025 executive action) of institutional woke salience.
+**(e) Mechanism:** Richard Hanania's "Origin of Woke" model argues that "wokeness" is primarily an institutional equilibrium maintained by HR, legal, and bureaucratic incentives rather than mass public opinion. If this model is correct, executive orders that remove or reverse federal DEI mandates should produce a sharp, sustained decline in DEI-related search activity — not merely a transient news spike — because institutional actors respond quickly to changed compliance incentives. In contrast, a "mass belief" model would predict either no change (beliefs are sticky) or a backlash increase. The five-year window lets us see the full rise (2020 George Floyd / BLM) and potential fall (2025 executive action) of institutional woke salience. By including five conceptually distinct keywords — ranging from core institutional-DEI vocabulary ("unconscious bias," "white privilege") to broader cultural/academic terms ("structural racism," "intersectionality") to a term with independent institutional roots ("gender identity") — we can test whether the decline is concentrated in the concepts most tightly coupled to institutional DEI compliance.
 
 ---
 
@@ -23,10 +23,11 @@
 
 | # | Keyword | Rationale / Ambiguity notes |
 |---|---------|---------------------------|
-| 1 | `DEI` | The umbrella acronym for institutional diversity/equity/inclusion programs. Directly names the institutional construct. **Ambiguity:** also captures news searches about the EO itself; spikes in Jan–Feb 2025 are news-driven. |
-| 2 | `HR` | Human Resources — the institutional function that administers DEI programs. Serves partly as an **implicit control**: if only DEI-specific terms decline but general HR interest stays stable, that isolates the DEI shock from broader labor-market trends. **Ambiguity:** highly generic; also stands for Croatia, HTML tag, etc. |
-| 3 | `unconscious bias` | A concept central to institutional DEI training programs (unconscious-bias workshops). Captures demand for a specific institutional practice. **Ambiguity:** may also capture academic/psychology interest unrelated to workplace programs. |
-| 4 | `structural racism` | An ideological/theoretical concept promoted within the "woke" institutional framework. Hanania's model predicts institutional concepts should decline; a cultural/academic concept like this may or may not respond. **Ambiguity:** strongly tied to academic sociology; may follow academic-calendar seasonality (fall semester peaks). |
+| 1 | `unconscious bias` | A concept central to institutional DEI training programs (unconscious-bias workshops). Captures demand for a specific institutional practice. **Ambiguity:** may also capture academic/psychology interest unrelated to workplace programs. |
+| 2 | `intersectionality` | An academic concept (Crenshaw, 1989) that was adopted into institutional DEI frameworks. Straddles the academic/institutional boundary. **Ambiguity:** heavily used in academic sociology and gender studies; follows academic-calendar seasonality. |
+| 3 | `structural racism` | A sociological concept promoted within the broader "woke" framework. Hanania's model predicts institutional concepts should decline; a more purely academic term like this may or may not respond. **Ambiguity:** strongly tied to academic sociology; seasonal fall-semester peaks. |
+| 4 | `white privilege` | A core concept in institutional DEI training and discourse. Was popularized in institutional settings (e.g., Peggy McIntosh's "invisible knapsack" exercise widely used in diversity workshops). **Ambiguity:** also used in broader cultural and political debate. |
+| 5 | `gender identity` | A concept with its own independent institutional infrastructure (medical, legal, educational) distinct from DEI compliance. Serves as a **partial control**: if the EO shock is specific to DEI/race-focused institutional practice, gender identity should be less affected. **Ambiguity:** captures medical/legal interest (e.g., policy on gender-affirming care, ID documents) beyond workplace DEI. |
 
 ---
 
@@ -54,12 +55,13 @@ The keyword plot is saved as `output/keywords_plot.png` and the underlying data 
 ![Keywords Plot](output/keywords_plot.png)
 
 **Key observations from the plot:**
-- **DEI** (blue) was a low-volume term (4–13) throughout 2020–2023. It began rising in 2024 (the election campaign), then exploded to **100 in January 2025** (inauguration + first anti-DEI EO). It crashed to 41 by March, 26 by April, and settled at **11–18 for the rest of 2025** — returning to its pre-politicization baseline.
-- **HR** (orange) is stable at 60–95 throughout the entire period with strong seasonality (peaks in Jan–Mar hiring season). It shows **no response** to the DEI executive orders, serving as a negative control within the keyword set.
-- **unconscious bias** (green) peaked at **100 in June 2020** (George Floyd / BLM), then gradually declined through 2021–2024 (from ~50 to ~35). Post-EO (May 2025 onward) it fell further to 21–33, its lowest sustained level in the dataset.
-- **structural racism** (red) also peaked at 100 in June 2020, then stabilized around 20–50 with a seasonal academic pattern (fall peaks). Post-EO it shows **no clear change**, oscillating between 24–48 as before.
+- **unconscious bias** peaked at **100 in June 2020** (George Floyd / BLM), then gradually declined through 2021–2024 (from ~50 to ~35). Post-EO (May 2025 onward) it fell further to 21–33, its lowest sustained level in the dataset.
+- **intersectionality** also peaked in June 2020 and shows a clear academic-calendar pattern (fall semester rises, summer dips). Post-EO it declined from its typical range of ~50–70 to ~35–63.
+- **structural racism** peaked at 100 in June 2020, then stabilized around 20–50 with seasonal academic fluctuations. Post-EO it shows **no clear change**, continuing to oscillate between 24–48 as before.
+- **white privilege** peaked at 100 in June 2020 and has been in long-term decline since. By 2024 it was down to 4–7; post-EO it dropped to **3–5**, its lowest sustained level ever.
+- **gender identity** is the outlier: it shows a **different trajectory** from the other terms. It was relatively stable at 40–60 through 2020–2023, then *increased* in 2024–2025 (peaking at 82 in Nov 2024), likely driven by political debates over gender-affirming care and sports. Post-EO it remained stable at 56–75, showing **no decline**.
 
-**Important note on scaling:** All four keywords were queried individually, so each has its own 0–100 scale. Cross-keyword level comparisons on the plot should be interpreted with caution; within-keyword pre/post comparisons are valid.
+**Important note on scaling:** All five keywords were queried individually, so each has its own 0–100 scale. Cross-keyword level comparisons on the plot should be interpreted with caution; within-keyword pre/post comparisons are valid.
 
 ---
 
@@ -69,14 +71,17 @@ Computed from monthly data. "Pre" = April 2020 – March 2025 (61 months). "Post
 
 | Keyword | Pre mean | Post mean | Peak (post) | Peak month | post − pre | post / pre |
 |---------|----------|-----------|-------------|------------|-----------|-----------|
-| DEI | 14.0 | 14.4 | 18 | May 2025 | +0.4 | 1.031 |
-| HR | 71.6 | 81.9 | 100 | Jul 2025 | +10.3 | 1.144 |
-| unconscious bias | 43.5 | 28.6 | 33 | Sep 2025 | −15.0 | 0.656 |
+| unconscious bias | 43.5 | 28.4 | 33 | Sep 2025 | −15.1 | **0.654** |
+| intersectionality | 56.1 | 43.3 | 63 | Sep 2025 | −12.7 | **0.773** |
 | structural racism | 34.3 | 34.8 | 48 | Oct 2025 | +0.5 | 1.014 |
+| white privilege | 8.4 | 4.1 | 5 | multiple | −4.2 | **0.492** |
+| gender identity | 55.6 | 60.1 | 75 | Nov 2025 | +4.5 | 1.082 |
 
-**Interpreting the DEI ratio of 1.03 (apparently flat):** The 5-year pre-mean (14.0) is dominated by 2020–2023 when "DEI" was barely searched (4–11). The Jan–Feb 2025 spike (100, 97) pulls the pre-mean up slightly, but the huge variance makes this ratio misleading. The more informative comparison uses the narrower window (see Q8 Window Check): in the first 4 months of 2025, DEI averaged **29.1** weekly; in the 9 months post-EO, it averaged **6.2** — a ratio of **0.21**, an **79% decline**.
+**Interpreting white privilege (ratio 0.49):** This is the largest percentage decline among the keywords — a **51% drop** — but the absolute levels are very low (pre-mean of only 8.4). "White privilege" was already in steep long-term decline before the EO, from a peak of 100 in June 2020 to single digits by late 2023. The post-EO decline may partly continue that existing downward trend rather than reflecting a new shock. However, the post-EO values (3–5) are the lowest ever recorded.
 
-**Interpreting unconscious bias (ratio 0.66):** This is the cleanest keyword result. "Unconscious bias" had no massive news spike (unlike "DEI"), so the 34% decline from a 5-year pre-mean of 43.5 to a post-mean of 28.6 reflects a genuine, sustained drop in interest in this institutional concept/practice.
+**Interpreting unconscious bias (ratio 0.65):** The cleanest signal. "Unconscious bias" had stable enough pre-EO volume (35–50 range in 2022–2024) to establish a clear baseline, and the post-EO decline to 21–33 represents a genuine drop below its recent range. The 35% decline reflects sustained reduced interest in this core DEI training concept.
+
+**Interpreting gender identity (ratio 1.08):** The **absence of decline** is informative. "Gender identity" has its own independent institutional drivers (medical policy, legal frameworks, school policy debates) and was not targeted by the April 23 DEI executive order in the same way. Its stability supports the interpretation that the other declines are specific to the DEI institutional construct, not a general "culture war exhaustion."
 
 ---
 
@@ -88,12 +93,12 @@ The topic plot is saved as `output/topics_plot.png` and data as `output/topics_d
 
 | Topic | Pre mean | Post mean | Peak (post) | Peak month | post − pre | post / pre |
 |-------|----------|-----------|-------------|------------|-----------|-----------|
-| Diversity, equity, and inclusion | 8.1 | 7.4 | 12 | Sep 2025 | −0.7 | 0.919 |
+| Diversity, equity, and inclusion | 8.1 | 7.3 | 12 | Sep 2025 | −0.8 | 0.906 |
 | Diversity training | 33.3 | 14.3 | 18 | May 2025 | −19.0 | **0.430** |
 
 **The Diversity training Topic is the strongest finding.** This Topic peaked at 100 in September 2020 (post-George Floyd institutional training wave), stabilized at 22–47 through 2024, and then collapsed to 8–18 post-EO. By **January 2026 it reached 8** — its **lowest value in the entire 6-year dataset**, lower than even pre-George Floyd levels (14 in April 2020). The ratio of 0.43 means post-EO interest is **57% below** the 5-year average.
 
-The DEI Topic is harder to interpret because it was near-zero before 2022 (the term hadn't entered mass consciousness). Its 100-point spike in January 2025 overwhelms the monthly comparison. But the post-spike trajectory — 100 → 85 → 32 → 21 → 10 → 8 → 7 → 7 → 12 → 7 → 6 → 5 → 5 — shows it has settled at **5** by late 2025, lower than its 2024 average (~11).
+The DEI Topic is harder to interpret because it was near-zero before 2022 (the term hadn't entered mass consciousness). Its 100-point spike in January 2025 overwhelms the monthly comparison. But the post-spike trajectory — 100 → 85 → 32 → 21 → 10 → 8 → 7 → 7 → 12 → 7 → 6 → 5 → 4 — shows it has settled at **4–5** by late 2025, lower than its 2024 average (~11).
 
 ---
 
@@ -103,21 +108,22 @@ The DEI Topic is harder to interpret because it was near-zero before 2022 (the t
 
 | Keyword | post − pre | post / pre | Interpretation |
 |---------|-----------|-----------|----------------|
-| DEI | +0.4 | 1.031 | Flat (misleading — see Q5 note; narrower window shows 79% decline) |
-| HR | +10.3 | 1.144 | Slight increase — no DEI-specific effect; serves as implicit control |
-| unconscious bias | −15.0 | **0.656** | **34% decline** — clearest keyword signal |
-| structural racism | +0.5 | 1.014 | Flat — cultural/academic term did not respond to the institutional shock |
+| unconscious bias | −15.1 | **0.654** | **35% decline** — clearest keyword signal, core DEI training concept |
+| intersectionality | −12.7 | **0.773** | **23% decline** — academic-institutional hybrid concept |
+| structural racism | +0.5 | 1.014 | Flat — purely academic term, unaffected |
+| white privilege | −4.2 | **0.492** | **51% decline** — but already in long-term decline pre-EO |
+| gender identity | +4.5 | 1.082 | Flat/up — independent institutional drivers (medical, legal), unaffected |
 
 ### Topics
 
 | Topic | post − pre | post / pre | Interpretation |
 |-------|-----------|-----------|----------------|
-| Diversity, equity, and inclusion | −0.7 | 0.919 | 8% decline (attenuated by near-zero pre-2022 baseline) |
+| Diversity, equity, and inclusion | −0.8 | 0.906 | 9% decline (attenuated by near-zero pre-2022 baseline) |
 | Diversity training | −19.0 | **0.430** | **57% decline** — collapsed to all-time low |
 
 ### Do keywords and topics tell the same story?
 
-Keywords and topics tell a **convergent story once we account for scaling artifacts.** The clearest signals come from measures that (a) have enough pre-EO volume to establish a stable baseline and (b) are not overwhelmed by news-cycle spikes. By both criteria, the **Diversity training Topic** (ratio 0.43) and **unconscious bias keyword** (ratio 0.66) are the most informative. Both show large, sustained declines. The "DEI" keyword appears flat at the 5-year scale only because its pre-mean is pulled down by years of near-zero values; at the narrower window it collapses 79%. Conversely, "HR" and "structural racism" are flat, which matters: the shock was specific to DEI institutional practice, not to the broader HR profession or to cultural discourse about racism. I trust the **Topic-level** data more because Topics aggregate semantically related queries and are not sensitive to the exact string people type, reducing noise from ambiguous or variant phrasings.
+Keywords and topics tell a **convergent story with an instructive gradient.** The terms most tightly coupled to institutional DEI practice — **Diversity training Topic** (ratio 0.43), **white privilege** (0.49), and **unconscious bias** (0.65) — show the largest declines. **Intersectionality** (0.77), which straddles the academic/institutional boundary, shows a moderate decline. Meanwhile, **structural racism** (1.01), which is primarily academic sociology, and **gender identity** (1.08), which has independent institutional drivers outside of DEI compliance, are flat or rising. This gradient is exactly what Hanania's model predicts: the more tightly a concept is tied to institutional DEI compliance (HR training, workshops, corporate policy), the more sharply it declines when the institutional incentive changes. Concepts rooted in academic disciplines or separate institutional frameworks are unaffected. I trust the **Topic-level** data most because Topics aggregate semantically related queries and are less sensitive to exact phrasing, but the keyword gradient provides the most theoretically informative pattern.
 
 ---
 
@@ -134,7 +140,7 @@ Keywords and topics tell a **convergent story once we account for scaling artifa
 
 ![Synonym Swap Plot](output/robustness_synonym_plot.png)
 
-**Finding:** A striking divergence. "Structural racism" (the more academic phrasing) is flat, while "systemic racism" (the more mainstream/activist phrasing) declined **58%**. Both peaked during the June 2020 BLM moment, but "systemic racism" was already at very low absolute levels (2–5) by 2022, making the ratio sensitive to small changes. Still, the directional difference is noteworthy: the more institutionally popularized synonym declined more sharply, consistent with Hanania's model that institutional vocabulary fades when incentives change.
+**Finding:** A striking divergence. "Structural racism" (the more academic phrasing) is flat, while "systemic racism" (the more mainstream/activist phrasing) declined **58%**. Both peaked during the June 2020 BLM moment, but "systemic racism" was already at very low absolute levels (2–5) by 2022, making the ratio sensitive to small changes. Still, the directional difference is noteworthy: the more institutionally popularized synonym declined more sharply, consistent with Hanania's model that institutional vocabulary fades faster than academic vocabulary when compliance incentives change. "Structural racism" persists because it lives in sociology syllabi; "systemic racism" fades because it was adopted by institutional DEI trainers.
 
 ### Check 2: Negative Control
 
@@ -152,24 +158,25 @@ Keywords and topics tell a **convergent story once we account for scaling artifa
 
 **Window:** January 1, 2025 – January 27, 2026 (weekly granularity; 17 pre-EO weeks, 40 post-EO weeks).
 
-This check zooms in on 2025 to see the fine-grained weekly dynamics around the shock, separating the January inauguration spike from the April EO.
+This check zooms in on 2025 to see the fine-grained weekly dynamics around the shock, with all five keywords on the same weekly scale.
 
 | Keyword | Pre mean (weekly) | Post mean (weekly) | post − pre | post / pre |
 |---------|-------------------|--------------------|-----------|-----------|
-| DEI | 29.1 | 6.2 | −22.9 | **0.215** |
-| HR | 73.1 | 70.0 | −3.1 | 0.958 |
-| unconscious bias | 79.9 | 67.9 | −12.0 | 0.849 |
+| unconscious bias | 79.9 | 67.9 | −12.0 | **0.850** |
+| intersectionality | 75.2 | 60.9 | −14.2 | **0.810** |
 | structural racism | 44.7 | 50.4 | +5.7 | 1.127 |
+| white privilege | 51.7 | 45.7 | −6.0 | **0.883** |
+| gender identity | 76.3 | 70.9 | −5.4 | 0.929 |
 
 ![Window Check Plot](output/robustness_window_plot.png)
 
-**Finding:** The weekly data reveals the sharpest picture. DEI collapsed **79%** from a pre-EO weekly mean of 29.1 to a post-EO mean of 6.2. The week-by-week trajectory shows DEI peaking at 100 (week of Jan 26, right after inauguration), then falling: 66 → 29 → 34 → 34 → 24 → 16 → 17 → 14 → 13 → 12 → 12 → 11 (pre-Apr 23). By the time the April 23 EO was signed, DEI was already at 11. Post-EO it fell further to **4–9** and stayed there through January 2026. HR was essentially flat (ratio 0.96). Unconscious bias showed a moderate 15% decline. Structural racism was flat or slightly up. This pattern — DEI-specific collapse, HR stable, cultural terms stable — is exactly what the Hanania model predicts.
+**Finding:** The weekly data confirms the 5-year monthly pattern with finer resolution. All five keywords are visible in 2025. The rank-ordering is preserved: intersectionality (−19%) and unconscious bias (−15%) show the largest declines. White privilege (−12%) and gender identity (−7%) show moderate and small declines respectively. Structural racism is flat or slightly *up* (+13%). The weekly plot also reveals that all DEI-adjacent terms show elevated values in January–March 2025 (the inauguration-driven attention spike), then settle into lower post-EO levels. Structural racism lacks this pattern entirely, instead showing its usual academic-calendar seasonality (rise in fall semester, dip in summer). Gender identity's mild 7% decline at the weekly scale (vs. +8% at the 5-year scale) suggests it is essentially noise-level — no meaningful EO response.
 
 ---
 
 ## Q9. Mini Write-Up (6–8 sentences)
 
-This investigation tested whether executive orders targeting DEI — specifically the April 23, 2025 EO "Restoring Equality of Opportunity and Meritocracy" — were followed by sustained declines in Google search interest for institutional DEI constructs, using a five-year US window (April 2020 – January 2026) to capture the full rise and fall. The construct was operationalized with four keywords ("DEI," "HR," "unconscious bias," "structural racism") and two Topics ("Diversity, equity, and inclusion," "Diversity training"), with monthly granularity for the 5-year window and weekly granularity for a 2025-focused robustness check. The strongest result is the **Diversity training Topic**, which declined 57% from a 5-year mean of 33.3 to a post-EO mean of 14.3, reaching its **all-time low of 8 in January 2026** — below even pre-George Floyd (2020) levels. The **unconscious bias keyword** declined 34%, and the **DEI keyword** collapsed 79% at the weekly scale (from 29.1 to 6.2), while **HR** was flat (ratio 0.96) and **structural racism** was flat (ratio 1.01), confirming that the decline was specific to DEI institutional vocabulary, not general labor-market or cultural-discourse trends. An important alternative explanation is that the "DEI" decline is mostly a **news-cycle artifact**: the acronym spiked when Trump's inauguration made it a national story (Jan 2025), and the subsequent decline may reflect the news moving on rather than institutional behavioral change. A key limitation is that Google Trends captures search attention, not institutional behavior — we cannot distinguish an HR director dismantling a DEI program from a journalist covering the story or a student writing a paper; the Diversity training Topic's collapse to all-time lows is suggestive but not conclusive. A concrete next step would be to supplement Google Trends with direct institutional data — for example, tracking the number of "Chief Diversity Officer" job postings on Indeed/LinkedIn over the same window — to test whether the attention decline maps onto actual organizational changes, as Hanania's model specifically predicts.
+This investigation tested whether executive orders targeting DEI — specifically the April 23, 2025 EO "Restoring Equality of Opportunity and Meritocracy" — were followed by sustained declines in Google search interest for concepts associated with institutional "wokeness," using a five-year US window (April 2020 – January 2026) and five keywords ("unconscious bias," "intersectionality," "structural racism," "white privilege," "gender identity") plus two Topics ("Diversity, equity, and inclusion," "Diversity training"). The results reveal a clear **gradient** consistent with Hanania's institutional-equilibrium model: the **Diversity training Topic** collapsed 57% to its all-time low, **white privilege** fell 51%, **unconscious bias** fell 35%, and **intersectionality** fell 23% — while **structural racism** (a purely academic term) was flat at 1.01 and **gender identity** (which has independent medical/legal institutional drivers) was flat at 1.08. This gradient — steepest decline for terms most tightly coupled to institutional DEI compliance, no decline for terms rooted in academic disciplines or separate institutional frameworks — is the pattern Hanania's model specifically predicts and a "mass belief" model does not. The strongest single finding is the Diversity training Topic reaching **8 in January 2026**, its lowest value in the entire 6-year dataset, below even pre-George Floyd levels. An important alternative explanation is that several of these terms (especially "white privilege") were already in **long-term decline since June 2020**, and the post-EO period may simply continue a pre-existing trend rather than reflecting a new institutional shock; disentangling the EO effect from the secular trend would require interrupted time-series methods beyond this assignment's scope. A key limitation is that Google Trends captures search attention, not institutional behavior — we cannot tell whether declining searches for "unconscious bias" mean fewer workshops being conducted, fewer people curious about the concept, or simply fewer news articles using the phrase. A concrete next step would be to combine the Google Trends data with direct institutional measures — for example, tracking the number of "Chief Diversity Officer" job postings on Indeed/LinkedIn and federal DEI contract dollars over the same window — to test whether the attention decline maps onto the actual organizational dismantlement that Hanania's model predicts.
 
 ---
 
