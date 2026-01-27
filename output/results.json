@@ -1,0 +1,172 @@
+{
+  "keyword_stats": {
+    "DEI": {
+      "pre_mean": 79.57,
+      "post_mean": 66.73,
+      "peak_post": 100,
+      "peak_post_date": "2025-04-24",
+      "diff": -12.84,
+      "ratio": 0.839,
+      "n_pre": 14,
+      "n_post": 15
+    },
+    "diversity training": {
+      "pre_mean": 29.5,
+      "post_mean": 61.73,
+      "peak_post": 91,
+      "peak_post_date": "2025-05-06",
+      "diff": 32.23,
+      "ratio": 2.093,
+      "n_pre": 14,
+      "n_post": 15
+    },
+    "unconscious bias": {
+      "pre_mean": 38.5,
+      "post_mean": 68.8,
+      "peak_post": 100,
+      "peak_post_date": "2025-04-28",
+      "diff": 30.3,
+      "ratio": 1.787,
+      "n_pre": 14,
+      "n_post": 15
+    },
+    "equity and inclusion": {
+      "pre_mean": 64.57,
+      "post_mean": 52.2,
+      "peak_post": 100,
+      "peak_post_date": "2025-04-24",
+      "diff": -12.37,
+      "ratio": 0.808,
+      "n_pre": 14,
+      "n_post": 15
+    }
+  },
+  "topic_stats": {
+    "Diversity, equity, and inclusion (Topic)": {
+      "pre_mean": 74.64,
+      "post_mean": 59.87,
+      "peak_post": 100,
+      "peak_post_date": "2025-04-24",
+      "diff": -14.78,
+      "ratio": 0.802,
+      "n_pre": 14,
+      "n_post": 15
+    },
+    "Diversity training (Topic)": {
+      "pre_mean": 15.36,
+      "post_mean": 18.87,
+      "peak_post": 100,
+      "peak_post_date": "2025-04-24",
+      "diff": 3.51,
+      "ratio": 1.229,
+      "n_pre": 14,
+      "n_post": 15
+    }
+  },
+  "ayers_lite": {
+    "keywords": {
+      "DEI": {
+        "diff": -12.84,
+        "ratio": 0.839
+      },
+      "diversity training": {
+        "diff": 32.23,
+        "ratio": 2.093
+      },
+      "unconscious bias": {
+        "diff": 30.3,
+        "ratio": 1.787
+      },
+      "equity and inclusion": {
+        "diff": -12.37,
+        "ratio": 0.808
+      }
+    },
+    "topics": {
+      "Diversity, equity, and inclusion (Topic)": {
+        "diff": -14.78,
+        "ratio": 0.802
+      },
+      "Diversity training (Topic)": {
+        "diff": 3.51,
+        "ratio": 1.229
+      }
+    }
+  },
+  "robustness_synonym": {
+    "diversity training": {
+      "pre_mean": 29.5,
+      "post_mean": 61.73,
+      "peak_post": 91,
+      "peak_post_date": "2025-05-06",
+      "diff": 32.23,
+      "ratio": 2.093,
+      "n_pre": 14,
+      "n_post": 15
+    },
+    "sensitivity training": {
+      "pre_mean": 7.14,
+      "post_mean": 12.33,
+      "peak_post": 99,
+      "peak_post_date": "2025-04-26",
+      "diff": 5.19,
+      "ratio": 1.727,
+      "n_pre": 14,
+      "n_post": 15
+    }
+  },
+  "robustness_negative_control": {
+    "recipe ideas": {
+      "pre_mean": 66.07,
+      "post_mean": 56.13,
+      "peak_post": 91,
+      "peak_post_date": "2025-05-04",
+      "diff": -9.94,
+      "ratio": 0.85,
+      "n_pre": 14,
+      "n_post": 15
+    }
+  },
+  "robustness_geography": {
+    "DEI": {
+      "pre_mean": 84.29,
+      "post_mean": 74.87,
+      "peak_post": 87,
+      "peak_post_date": "2025-04-23",
+      "diff": -9.42,
+      "ratio": 0.888,
+      "n_pre": 14,
+      "n_post": 15
+    },
+    "diversity training": {
+      "pre_mean": NaN,
+      "post_mean": NaN,
+      "peak_post": null,
+      "peak_post_date": null,
+      "diff": null,
+      "ratio": null,
+      "n_pre": 14,
+      "n_post": 15
+    },
+    "unconscious bias": {
+      "pre_mean": NaN,
+      "post_mean": NaN,
+      "peak_post": null,
+      "peak_post_date": null,
+      "diff": null,
+      "ratio": null,
+      "n_pre": 14,
+      "n_post": 15
+    },
+    "equity and inclusion": {
+      "pre_mean": 13.07,
+      "post_mean": 0.0,
+      "peak_post": 0,
+      "peak_post_date": "2025-04-23",
+      "diff": -13.07,
+      "ratio": 0.0,
+      "n_pre": 14,
+      "n_post": 15
+    }
+  }
+}
