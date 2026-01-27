@@ -24,16 +24,16 @@ import json
 
 # ── Configuration ───────────────────────────────────────────────────
 EVENT_DATE = pd.Timestamp('2025-04-23')
-EVENT_LABEL = 'EO Signed\n(Apr 23)'
-TIMEFRAME = '2025-04-09 2025-05-07'   # ~2 weeks before/after
+EVENT_LABEL = 'EO Signed\n(Apr 23, 2025)'
+TIMEFRAME = '2020-04-01 2026-01-27'   # ~5 years before shock through present
 GEO = 'US'
 OUTPUT_DIR = 'output'
 
 KEYWORDS = [
     'DEI',
-    'diversity training',
+    'HR',
     'unconscious bias',
-    'equity and inclusion',
+    'structural racism',
 ]
 
 # Topic mid → display label
@@ -44,8 +44,8 @@ TOPICS = {
 
 # Robustness: synonym swap
 SYNONYM_SWAP = {
-    'original': 'diversity training',
-    'synonym':  'sensitivity training',
+    'original': 'structural racism',
+    'synonym':  'systemic racism',
 }
 
 # Robustness: negative control (term that should NOT move with the event)
@@ -55,8 +55,8 @@ NEGATIVE_CONTROL = 'recipe ideas'
 ALT_GEO = 'US-CA'   # California
 ALT_GEO_LABEL = 'California'
 
-# Robustness: shorter window
-SHORT_TIMEFRAME = '2025-04-16 2025-04-30'   # 1 week before/after
+# Robustness: window check (narrower 6-month window around the shock)
+SHORT_TIMEFRAME = '2025-01-01 2026-01-27'   # 4 months before + 9 months after
 SHORT_EVENT_DATE = EVENT_DATE
 
 SLEEP = 3  # seconds between API calls
@@ -104,9 +104,9 @@ def pre_post_stats(series, event_date=EVENT_DATE):
 
 def plot_series(df, title, filename, event_date=EVENT_DATE, event_label=EVENT_LABEL):
     """Plot time series with vertical event line."""
-    fig, ax = plt.subplots(figsize=(12, 5))
+    fig, ax = plt.subplots(figsize=(14, 6))
     for col in df.columns:
-        ax.plot(df.index, df[col], marker='o', markersize=3, linewidth=1.5, label=col)
+        ax.plot(df.index, df[col], linewidth=1.3, label=col, alpha=0.85)
     ax.axvline(event_date, color='red', linestyle='--', linewidth=2, alpha=0.7)
     ax.text(event_date, ax.get_ylim()[1] * 0.95, event_label,
             ha='center', va='top', fontsize=9, color='red',
@@ -115,8 +115,17 @@ def plot_series(df, title, filename, event_date=EVENT_DATE, event_label=EVENT_LA
     ax.set_xlabel('Date')
     ax.set_ylabel('Google Trends Index (0–100)')
     ax.legend(loc='upper left', fontsize=8)
-    ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
-    ax.xaxis.set_major_locator(mdates.DayLocator(interval=3))
+    # Adapt axis formatting to time span
+    span_days = (df.index[-1] - df.index[0]).days if len(df) > 1 else 30
+    if span_days > 365:
+        ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
+        ax.xaxis.set_major_locator(mdates.MonthLocator(interval=6))
+    elif span_days > 60:
+        ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
+        ax.xaxis.set_major_locator(mdates.WeekdayLocator(interval=2))
+    else:
+        ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
+        ax.xaxis.set_major_locator(mdates.DayLocator(interval=3))
     plt.xticks(rotation=45)
     plt.tight_layout()
     path = os.path.join(OUTPUT_DIR, filename)
@@ -225,7 +234,7 @@ def main():
     synonym_df.to_csv(os.path.join(OUTPUT_DIR, 'robustness_synonym.csv'))
     plot_series(synonym_df,
                 'Robustness: Synonym Swap\n'
-                '"diversity training" vs "sensitivity training"',
+                f'"{SYNONYM_SWAP["original"]}" vs "{SYNONYM_SWAP["synonym"]}"',
                 'robustness_synonym_plot.png')
     results['robustness_synonym'] = synonym_stats
 
@@ -242,19 +251,19 @@ def main():
                 'robustness_negative_control_plot.png')
     results['robustness_negative_control'] = neg_stats
 
-    # --- Check 3: Geography check ---
-    print(f"\n  [Check 3] Geography check: {ALT_GEO_LABEL} ({ALT_GEO})")
-    geo_df = fetch_trends(KEYWORDS, geo=ALT_GEO)
-    geo_stats = {}
-    for col in geo_df.columns:
-        geo_stats[col] = pre_post_stats(geo_df[col])
-    print_stats_table(geo_stats, label=f'GEOGRAPHY CHECK ({ALT_GEO_LABEL})')
-    geo_df.to_csv(os.path.join(OUTPUT_DIR, 'robustness_geography.csv'))
-    plot_series(geo_df,
-                f'Robustness: Keywords in {ALT_GEO_LABEL}\n'
+    # --- Check 3: Window check (narrower window around the shock) ---
+    print(f"\n  [Check 3] Window check: narrower window ({SHORT_TIMEFRAME})")
+    short_df = fetch_trends(KEYWORDS, timeframe=SHORT_TIMEFRAME)
+    short_stats = {}
+    for col in short_df.columns:
+        short_stats[col] = pre_post_stats(short_df[col], event_date=SHORT_EVENT_DATE)
+    print_stats_table(short_stats, label=f'WINDOW CHECK ({SHORT_TIMEFRAME})')
+    short_df.to_csv(os.path.join(OUTPUT_DIR, 'robustness_window.csv'))
+    plot_series(short_df,
+                f'Robustness: Narrower Window ({SHORT_TIMEFRAME})\n'
                 'Event: Trump EO (Apr 23, 2025)',
-                'robustness_geography_plot.png')
-    results['robustness_geography'] = geo_stats
+                'robustness_window_plot.png')
+    results['robustness_window'] = short_stats
 
     # ── Save all results as JSON ────────────────────────────────────
     # Convert any non-serializable types

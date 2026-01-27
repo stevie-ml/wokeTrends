@@ -1,172 +1,172 @@
 {
   "keyword_stats": {
     "DEI": {
-      "pre_mean": 79.57,
-      "post_mean": 66.73,
-      "peak_post": 100,
-      "peak_post_date": "2025-04-24",
-      "diff": -12.84,
-      "ratio": 0.839,
-      "n_pre": 14,
-      "n_post": 15
+      "pre_mean": 14.02,
+      "post_mean": 14.44,
+      "peak_post": 18,
+      "peak_post_date": "2025-05-01",
+      "diff": 0.43,
+      "ratio": 1.031,
+      "n_pre": 61,
+      "n_post": 9
     },
-    "diversity training": {
-      "pre_mean": 29.5,
-      "post_mean": 61.73,
-      "peak_post": 91,
-      "peak_post_date": "2025-05-06",
-      "diff": 32.23,
-      "ratio": 2.093,
-      "n_pre": 14,
-      "n_post": 15
+    "HR": {
+      "pre_mean": 71.56,
+      "post_mean": 81.89,
+      "peak_post": 100,
+      "peak_post_date": "2025-07-01",
+      "diff": 10.33,
+      "ratio": 1.144,
+      "n_pre": 61,
+      "n_post": 9
     },
     "unconscious bias": {
-      "pre_mean": 38.5,
-      "post_mean": 68.8,
-      "peak_post": 100,
-      "peak_post_date": "2025-04-28",
-      "diff": 30.3,
-      "ratio": 1.787,
-      "n_pre": 14,
-      "n_post": 15
+      "pre_mean": 43.52,
+      "post_mean": 28.56,
+      "peak_post": 33,
+      "peak_post_date": "2025-09-01",
+      "diff": -14.97,
+      "ratio": 0.656,
+      "n_pre": 61,
+      "n_post": 9
     },
-    "equity and inclusion": {
-      "pre_mean": 64.57,
-      "post_mean": 52.2,
-      "peak_post": 100,
-      "peak_post_date": "2025-04-24",
-      "diff": -12.37,
-      "ratio": 0.808,
-      "n_pre": 14,
-      "n_post": 15
+    "structural racism": {
+      "pre_mean": 34.31,
+      "post_mean": 34.78,
+      "peak_post": 48,
+      "peak_post_date": "2025-10-01",
+      "diff": 0.47,
+      "ratio": 1.014,
+      "n_pre": 61,
+      "n_post": 9
     }
   },
   "topic_stats": {
     "Diversity, equity, and inclusion (Topic)": {
-      "pre_mean": 74.64,
-      "post_mean": 59.87,
-      "peak_post": 100,
-      "peak_post_date": "2025-04-24",
-      "diff": -14.78,
-      "ratio": 0.802,
-      "n_pre": 14,
-      "n_post": 15
+      "pre_mean": 8.1,
+      "post_mean": 7.44,
+      "peak_post": 12,
+      "peak_post_date": "2025-09-01",
+      "diff": -0.65,
+      "ratio": 0.919,
+      "n_pre": 61,
+      "n_post": 9
     },
     "Diversity training (Topic)": {
-      "pre_mean": 15.36,
-      "post_mean": 18.87,
-      "peak_post": 100,
-      "peak_post_date": "2025-04-24",
-      "diff": 3.51,
-      "ratio": 1.229,
-      "n_pre": 14,
-      "n_post": 15
+      "pre_mean": 33.34,
+      "post_mean": 14.33,
+      "peak_post": 18,
+      "peak_post_date": "2025-05-01",
+      "diff": -19.01,
+      "ratio": 0.43,
+      "n_pre": 61,
+      "n_post": 9
     }
   },
   "ayers_lite": {
     "keywords": {
       "DEI": {
-        "diff": -12.84,
-        "ratio": 0.839
+        "diff": 0.43,
+        "ratio": 1.031
       },
-      "diversity training": {
-        "diff": 32.23,
-        "ratio": 2.093
+      "HR": {
+        "diff": 10.33,
+        "ratio": 1.144
       },
       "unconscious bias": {
-        "diff": 30.3,
-        "ratio": 1.787
+        "diff": -14.97,
+        "ratio": 0.656
       },
-      "equity and inclusion": {
-        "diff": -12.37,
-        "ratio": 0.808
+      "structural racism": {
+        "diff": 0.47,
+        "ratio": 1.014
       }
     },
     "topics": {
       "Diversity, equity, and inclusion (Topic)": {
-        "diff": -14.78,
-        "ratio": 0.802
+        "diff": -0.65,
+        "ratio": 0.919
       },
       "Diversity training (Topic)": {
-        "diff": 3.51,
-        "ratio": 1.229
+        "diff": -19.01,
+        "ratio": 0.43
       }
     }
   },
   "robustness_synonym": {
-    "diversity training": {
-      "pre_mean": 29.5,
-      "post_mean": 61.73,
-      "peak_post": 91,
-      "peak_post_date": "2025-05-06",
-      "diff": 32.23,
-      "ratio": 2.093,
-      "n_pre": 14,
-      "n_post": 15
+    "structural racism": {
+      "pre_mean": 34.31,
+      "post_mean": 34.78,
+      "peak_post": 48,
+      "peak_post_date": "2025-10-01",
+      "diff": 0.47,
+      "ratio": 1.014,
+      "n_pre": 61,
+      "n_post": 9
     },
-    "sensitivity training": {
-      "pre_mean": 7.14,
-      "post_mean": 12.33,
-      "peak_post": 99,
-      "peak_post_date": "2025-04-26",
-      "diff": 5.19,
-      "ratio": 1.727,
-      "n_pre": 14,
-      "n_post": 15
+    "systemic racism": {
+      "pre_mean": 6.64,
+      "post_mean": 2.78,
+      "peak_post": 4,
+      "peak_post_date": "2025-09-01",
+      "diff": -3.86,
+      "ratio": 0.418,
+      "n_pre": 61,
+      "n_post": 9
     }
   },
   "robustness_negative_control": {
     "recipe ideas": {
-      "pre_mean": 66.07,
-      "post_mean": 56.13,
-      "peak_post": 91,
-      "peak_post_date": "2025-05-04",
-      "diff": -9.94,
-      "ratio": 0.85,
-      "n_pre": 14,
-      "n_post": 15
+      "pre_mean": 55.52,
+      "post_mean": 67.89,
+      "peak_post": 100,
+      "peak_post_date": "2025-12-01",
+      "diff": 12.36,
+      "ratio": 1.223,
+      "n_pre": 61,
+      "n_post": 9
     }
   },
-  "robustness_geography": {
+  "robustness_window": {
     "DEI": {
-      "pre_mean": 84.29,
-      "post_mean": 74.87,
-      "peak_post": 87,
-      "peak_post_date": "2025-04-23",
-      "diff": -9.42,
-      "ratio": 0.888,
-      "n_pre": 14,
-      "n_post": 15
+      "pre_mean": 29.12,
+      "post_mean": 6.25,
+      "peak_post": 9,
+      "peak_post_date": "2025-04-27",
+      "diff": -22.87,
+      "ratio": 0.215,
+      "n_pre": 17,
+      "n_post": 40
     },
-    "diversity training": {
-      "pre_mean": NaN,
-      "post_mean": NaN,
-      "peak_post": null,
-      "peak_post_date": null,
-      "diff": null,
-      "ratio": null,
-      "n_pre": 14,
-      "n_post": 15
+    "HR": {
+      "pre_mean": 73.12,
+      "post_mean": 70.05,
+      "peak_post": 100,
+      "peak_post_date": "2025-07-13",
+      "diff": -3.07,
+      "ratio": 0.958,
+      "n_pre": 17,
+      "n_post": 40
     },
     "unconscious bias": {
-      "pre_mean": NaN,
-      "post_mean": NaN,
-      "peak_post": null,
-      "peak_post_date": null,
-      "diff": null,
-      "ratio": null,
-      "n_pre": 14,
-      "n_post": 15
+      "pre_mean": 79.94,
+      "post_mean": 67.9,
+      "peak_post": 92,
+      "peak_post_date": "2025-09-21",
+      "diff": -12.04,
+      "ratio": 0.849,
+      "n_pre": 17,
+      "n_post": 40
     },
-    "equity and inclusion": {
-      "pre_mean": 13.07,
-      "post_mean": 0.0,
-      "peak_post": 0,
-      "peak_post_date": "2025-04-23",
-      "diff": -13.07,
-      "ratio": 0.0,
-      "n_pre": 14,
-      "n_post": 15
+    "structural racism": {
+      "pre_mean": 44.71,
+      "post_mean": 50.38,
+      "peak_post": 100,
+      "peak_post_date": "2025-11-30",
+      "diff": 5.67,
+      "ratio": 1.127,
+      "n_pre": 17,
+      "n_post": 40
     }
   }
 }
